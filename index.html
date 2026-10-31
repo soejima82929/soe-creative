@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -28,6 +29,8 @@ nav a:hover{color:#fff}
 .works-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:45px 28px}
 .work-image{aspect-ratio:16/10;background:linear-gradient(135deg,#1b1b1b,#101010);display:grid;place-items:center;border:1px solid #292929}
 .work-image span{color:#777;font-size:9px;letter-spacing:3px}
+.work-image.artwork{aspect-ratio:1/1;overflow:hidden;background:#111}
+.work-image.artwork img{width:100%;height:100%;object-fit:cover;display:block}
 .work h3{margin-top:18px;font-size:12px;letter-spacing:2px;font-weight:500}
 .work p{color:#777;font-size:11px;margin-top:8px}
 .about{background:#101010}
@@ -51,35 +54,65 @@ footer p{color:#666;font-size:9px;letter-spacing:1px}
 </head>
 <body>
 <header class="header">
-  <a href="#" class="logo"><img src="data:image/jpeg;base64,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" alt="SOE monogram"><span>SOE.</span></a>
-  <nav><a href="#works">WORKS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav>
+  <a href="#" class="logo">SOE.</a>
+  <nav>
+    <a href="#works">WORKS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
 </header>
+
 <main>
 <section class="hero">
   <p class="eyebrow">FILM / MUSIC / ART</p>
   <h1>I CREATE<br><span>WORLDS.</span></h1>
-  <p class="intro">Creating beyond boundaries.<br>映像、音楽、美術。自分だけの世界を創る。</p>
-  <a href="#works" class="explore">EXPLORE MY WORKS ↓</a>
-  <div class="hero-bottom">INDEPENDENT CREATOR — JAPAN</div>
+  <p class="intro">Creating beyond boundaries.<br>映像・音楽・美術を通して、自分だけの世界を創る。</p>
+  <a href="#works" class="explore">EXPLORE WORKS ↘</a>
+  <p class="hero-bottom">INDEPENDENT CREATIVE — SOE</p>
 </section>
+
 <section id="works" class="section">
-  <p class="eyebrow">01 — SELECTED WORKS</p><h2>Works.</h2>
+  <p class="eyebrow">01 — SELECTED WORKS</p>
+  <h2>WORKS.</h2>
   <div class="works-grid">
-    <article class="work"><div class="work-image"><span>COMING SOON</span></div><h3>FILM & VIDEO</h3><p>映像作品・短編映画・MV</p></article>
-    <article class="work"><div class="work-image"><span>COMING SOON</span></div><h3>MUSIC</h3><p>オリジナル音楽・サウンド</p></article>
-    <article class="work"><div class="work-image"><span>COMING SOON</span></div><h3>ART & DESIGN</h3><p>イラスト・ビジュアル作品</p></article>
+    <article class="work">
+      <div class="work-image"><span>COMING SOON</span></div>
+      <h3>FILM & VIDEO</h3>
+      <p>Short Films / Music Videos / Visuals</p>
+    </article>
+    <article class="work">
+      <div class="work-image"><span>COMING SOON</span></div>
+      <h3>MUSIC</h3>
+      <p>Original Music / Vocal / Composition</p>
+    </article>
+    <article class="work">
+      <div class="work-image artwork">
+        <img src="artwork_crop.jpg" alt="Original illustration by SOE">
+      </div>
+      <h3>ART & DESIGN</h3>
+      <p>Illustration / Fan Art</p>
+    </article>
   </div>
 </section>
+
 <section id="about" class="section about">
-  <p class="eyebrow">02 — ABOUT</p><h2>Beyond<br>Imagination.</h2>
+  <p class="eyebrow">02 — ABOUT</p>
+  <h2>Beyond<br>Imagination.</h2>
   <p>I create through film, music and art.<br>My goal is to express ideas, emotions<br>and worlds that cannot be described in words.</p>
   <p class="japanese">表現の可能性を広げ、自分にしか創れない作品を生み出す。<br>その過程を世界に発信していく。</p>
 </section>
+
 <section id="contact" class="section contact">
-  <p class="eyebrow">03 — CONTACT</p><h2>LET'S CONNECT.</h2><p>Follow my creative journey.</p>
-  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+  <p class="eyebrow">03 — CONTACT</p>
+  <h2>LET'S CONNECT.</h2>
+  <p>Follow my creative journey.</p>
+  <a href="https://www.instagram.com/st._creative/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
 </section>
 </main>
-<footer><a href="#" class="logo">SOE.</a><p>© 2026 SOE CREATIVE. ALL RIGHTS RESERVED.</p></footer>
+
+<footer>
+  <a href="#" class="logo">SOE.</a>
+  <p>© 2026 SOE CREATIVE. ALL RIGHTS RESERVED.</p>
+</footer>
 </body>
 </html>
